@@ -19,6 +19,8 @@ public class controller {
 		System.out.println("나이 : "+info.getAge());
 		System.out.println("키 : "+info.getHeight());
 		
+		System.out.println("깃 연결 완료!");
+		
 		return msg;
 	}
 }
