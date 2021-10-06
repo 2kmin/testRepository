@@ -21,6 +21,7 @@ public class controller {
 		
 		System.out.println("깃 연결 완료!");
 		
+		System.out.println("여기는 마스터!");
 		return msg;
 	}
 }
