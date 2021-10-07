@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.abc.controller.dto.Info;
 import com.abc.service.TestService;
 
+
 @RestController
 //@RequiredArgsConstructor
 public class controller {
@@ -26,7 +27,7 @@ public class controller {
 	public controller(TestService testService) {
 		this.testService = testService;
 	}
-	
+
 	@RequestMapping("hi/{name}")
 	public String hi(@PathVariable(value = "name") String name, @RequestBody Info info) {
 		
@@ -41,8 +42,6 @@ public class controller {
 		System.out.println("여기는 마스터!");
 		System.out.println("여기는 feature");
 		
-		String serviceResponse = testService.service();
-		System.out.println(">>>"+serviceResponse);
-		return "hi!";
+		return msg;
 	}
 }
