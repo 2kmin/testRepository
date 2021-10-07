@@ -6,10 +6,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.abc.controller.dto.Info;
+import com.abc.service.TestService;
+
+import lombok.RequiredArgsConstructor;
 
 @RestController
+@RequiredArgsConstructor
 public class controller {
 
+	private TestService testService;
+	
 	@RequestMapping("hi/{name}")
 	public String hi(@PathVariable(value = "name") String name, @RequestBody Info info) {
 		
@@ -24,6 +30,8 @@ public class controller {
 		System.out.println("여기는 마스터!");
 		System.out.println("여기는 feature");
 		
-		return msg;
+		String serviceResponse = testService.service();
+		System.out.println(">>>"+serviceResponse);
+		return "hi!";
 	}
 }
