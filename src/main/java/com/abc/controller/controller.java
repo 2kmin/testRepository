@@ -12,9 +12,13 @@ import com.abc.service.TestService;
 //@RequiredArgsConstructor
 public class controller {
 /*
- *  1. @RequiredArgsConstructor, 변수 final 선언으로 의존성을 주입 
+ *  1. @RequiredArgsConstructor, 변수 final 선언으로 의존성을 주입
+ *   
  *  2. private TestService testService; 위에 @Autowired 로 개별로 의존성 주입
- *  3. 
+ *  
+ *  3. 	public controller(TestService testService) {
+ *		this.testService = testService;
+ *		}
  *  
  */
 	private TestService testService;
