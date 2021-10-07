@@ -8,13 +8,20 @@ import org.springframework.web.bind.annotation.RestController;
 import com.abc.controller.dto.Info;
 import com.abc.service.TestService;
 
-import lombok.RequiredArgsConstructor;
-
 @RestController
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
 public class controller {
-
+/*
+ *  1. @RequiredArgsConstructor, 변수 final 선언으로 의존성을 주입 
+ *  2. private TestService testService; 위에 @Autowired 로 개별로 의존성 주입
+ *  3. 
+ *  
+ */
 	private TestService testService;
+	
+	public controller(TestService testService) {
+		this.testService = testService;
+	}
 	
 	@RequestMapping("hi/{name}")
 	public String hi(@PathVariable(value = "name") String name, @RequestBody Info info) {
