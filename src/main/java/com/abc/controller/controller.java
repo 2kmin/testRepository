@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.abc.controller.dto.Info;
-import com.abc.service.TestService;
+import com.abc.service.PrintService;
 
 
 @RestController
@@ -20,9 +20,14 @@ public class controller {
  *  3. 	public controller(TestService testService) {
  *		this.testService = testService;
  *		}
+<<<<<<< HEAD
  *  
  */
 	private TestService testService;
+=======
+ */
+	private final PrintService printService;
+>>>>>>> ff0106d (PrintService 생성)
 	
 	public controller(TestService testService) {
 		this.testService = testService;
@@ -42,6 +47,12 @@ public class controller {
 		System.out.println("여기는 마스터!");
 		System.out.println("여기는 feature");
 		
+<<<<<<< HEAD
+=======
+		String serviceResponse = printService.service(info);
+		System.out.println(">>>"+serviceResponse);
+		
+>>>>>>> ff0106d (PrintService 생성)
 		return msg;
 	}
 }
