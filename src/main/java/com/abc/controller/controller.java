@@ -8,9 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.abc.controller.dto.Info;
 import com.abc.service.PrintService;
 
+import lombok.RequiredArgsConstructor;
+
 
 @RestController
-//@RequiredArgsConstructor
+@RequiredArgsConstructor
 public class controller {
 /*
  *  1. @RequiredArgsConstructor, 변수 final 선언으로 의존성을 주입
@@ -23,15 +25,8 @@ public class controller {
 <<<<<<< HEAD
  *  
  */
-	private TestService testService;
-=======
- */
 	private final PrintService printService;
->>>>>>> ff0106d (PrintService 생성)
 	
-	public controller(TestService testService) {
-		this.testService = testService;
-	}
 
 	@RequestMapping("hi/{name}")
 	public String hi(@PathVariable(value = "name") String name, @RequestBody Info info) {
@@ -47,12 +42,9 @@ public class controller {
 		System.out.println("여기는 마스터!");
 		System.out.println("여기는 feature");
 		
-<<<<<<< HEAD
-=======
 		String serviceResponse = printService.service(info);
 		System.out.println(">>>"+serviceResponse);
 		
->>>>>>> ff0106d (PrintService 생성)
 		return msg;
 	}
 }
