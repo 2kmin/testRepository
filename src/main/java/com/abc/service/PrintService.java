@@ -15,10 +15,14 @@ public class PrintService {
 		System.out.println(">>> PrintService");
 		log.info("{}님의 정보 [나이 : {}][키 : {}]", info.getName(), info.getAge(), info.getHeight());
 
+		log.info("여기는 expect-conflict-2");
+
+		log.info("입니다.!");
+
 		log.info("마스터입니다.");
-		
+
 		log.info("마스터라구요");
-		
+
 		return "PrintService";
 	}
 
