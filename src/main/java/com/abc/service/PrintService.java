@@ -28,6 +28,8 @@ public class PrintService {
 		log.info("0428 마스터 커밋 분기 이후");
 
 		log.info("conflict 해결 마스터 -> 테스트");
+		
+//		rebase master on to test 하면 테스트가 마스터에 리베이스됌
 
 		log.info("여기는 expect-conflict-2");
 
