@@ -1,8 +1,8 @@
 package com.abc.service;
 
+import com.abc.controller.dto.Info;
 import org.springframework.stereotype.Service;
 
-import com.abc.controller.dto.Info;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -19,8 +19,9 @@ public class PrintService {
 
 		log.info("마스터라구요");
 
-		log.info("여기는 expect-conflict-2");
+		log.info("0428 마스터 커밋");
 
+		log.info("여기는 expect-conflict-2");
 
 		log.info("입니다.!");
 
