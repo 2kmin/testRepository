@@ -25,6 +25,10 @@ public class PrintService {
 
 		log.info("0428 테스트 브랜치 커밋");
 
+		log.info("0428 마스터 커밋 분기 이후");
+
+		log.info("conflict 해결 마스터 -> 테스트");
+
 		log.info("여기는 expect-conflict-2");
 
 		log.info("입니다.!");
