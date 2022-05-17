@@ -20,6 +20,6 @@ jobs:
         run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
         id: extract_branch
       - name: sout substring
-        run: ${{ github.ref }} --> ${{ steps.extract_branch.outputs.branch }}
+        run: echo "${{ github.ref }} --> ${{ steps.extract_branch.outputs.branch }}"
 #      - name: Branch name
 #        run: echo running on branch ${GITHUB_REF##*/}
