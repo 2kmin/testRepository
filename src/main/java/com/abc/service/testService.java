@@ -8,5 +8,7 @@ public class testService {
         System.out.println("test branch second commit");
 
         System.out.println("merge branch commit");
+
+        System.out.println("master commit");
     }
 }
