@@ -10,5 +10,7 @@ public class testService {
         System.out.println("merge branch commit");
 
         System.out.println("master commit");
+
+        System.out.println("master commit for test tag - 1");
     }
 }
