@@ -12,5 +12,7 @@ public class testService {
         System.out.println("master commit");
 
         System.out.println("master commit for test tag - 1");
+
+        System.out.println("master commit for test tag - 2");
     }
 }
