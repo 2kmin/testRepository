@@ -43,7 +43,9 @@ public class controller {
 		
 		System.out.println("여기는 마스터!");
 		System.out.println("여기는 feature");
-		
+
+		System.out.println("충돌 유발!");
+
 		String serviceResponse = printService.service(info);
 		System.out.println(">>>"+serviceResponse);
 		
